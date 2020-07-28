@@ -31,4 +31,4 @@ Install any of the extensions below
 
 ## Installing the UserScript
 After installing the right extension for your browser, install the UserScript by clicking [here](https://github.com/stake2/sa-style/raw/master/sa-style.user.css)<br>
-Or install it from the [OpenUserJs](https://openuserjs.org/) website by clicking [here](https://openuserjs.org/scripts/stake2/Stake2_-_Enviar_mensagem_com_Enter_no_SuperAnimes)
+Or install it from the [OpenUserJs](https://openuserjs.org/) website by clicking [here](https://openuserjs.org/scripts/stake2/Stake2_-_Enviar_mensagem_com_Enter_no_SuperAnimes)<br>
