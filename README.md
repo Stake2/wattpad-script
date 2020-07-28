@@ -9,7 +9,7 @@ It also aplies to the [SuperMangas](https://www.supermangas.site/) website<br>
 It allows you to use the Enter key to send messages to other people on the webiste<br>
 The website does not provide this feature by default<br>
 
-The UserScript was made using the [Tampermonkey](https://www.tampermonkey.net/) extension, but you can use others to run it.<br>
+The UserScript was made using the [Tampermonkey](https://www.tampermonkey.net/) extension, but you can use others to run it<br>
 Install any of the extensions below
 
 ## Installing extension on Chrome
