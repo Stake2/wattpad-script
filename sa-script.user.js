@@ -4,6 +4,7 @@
 // @version      1.0
 // @description  Esse script permite você enviar mensagens para outras pessoas no site SuperAnimes apertando o Enter, o site não permite isso por padrão
 // @author       Stake2, Izaque
+// @license      MIT
 // @homepageURL  https://github.com/stake2/sa-script/
 // @updateURL    https://github.com/stake2/sa-script/
 // @match        https://www.superanimes.org/*
