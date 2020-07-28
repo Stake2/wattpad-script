@@ -9,7 +9,7 @@ Ele também se aplica ao site [SuperMangas](https://www.supermangas.site/)<br>
 Ele permite você usar a tecla Enter para enviar mensagens para outras pessoas no site<br>
 O site não dá essa opção por padrão<br>
 
-O UserScript foi feito usando a extensão [Tampermonkey](https://www.tampermonkey.net/), mas você pode usar outras para rodá-lo.<br>
+O UserScript foi feito usando a extensão [Tampermonkey](https://www.tampermonkey.net/), mas você pode usar outras para rodá-lo<br>
 Instale qualquer uma das extensões abaixo
 
 ## Instalando a extensão no Chrome
