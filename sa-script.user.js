@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Stake2 - Enviar mensagem com Enter no SuperAnimes e SuperMangás
 // @namespace    https://github.com/stake2/sa-script/
-// @version      1.0
+// @version      1.1
 // @description  Esse script permite você enviar mensagens para outras pessoas no site SuperAnimes e SuperMangás apertando o Enter, o site não permite isso por padrão
 // @author       Stake2, Izaque
 // @license MIT
