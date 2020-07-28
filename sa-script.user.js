@@ -7,9 +7,9 @@
 // @license MIT
 // @homepageURL  https://github.com/stake2/sa-script/
 // @updateURL    https://github.com/stake2/sa-script/
-// @include      https://*.superanimes.*/
-// @include      https://*.supermangas.*/
-// @include      https://*.superhentais.*/
+// @include      https://www.superanimes.*/*
+// @include      https://www.supermangas.*/*
+// @include      https://www.superhentais.*/*
 // ==/UserScript==
 
 var input_box = document.getElementsByClassName("friend_sms_text")[0];
