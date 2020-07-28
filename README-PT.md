@@ -30,4 +30,5 @@ Instale qualquer uma das extensões abaixo
 [Link para a página do OpenUserJs com as extensões (em inglês)](https://openuserjs.org/about/Userscript-Beginners-HOWTO)<br>
 
 ## Instalando o UserScript
-Depois de instalar a extensão certa para seu navegador, instale o UserScript clicando [aqui](https://github.com/stake2/sa-style/raw/master/sa-style.user.css)
+Depois de instalar a extensão certa para seu navegador, instale o UserScript clicando [aqui](https://github.com/stake2/sa-style/raw/master/sa-style.user.css)<br>
+Ou instale ele do site [OpenUserJs](https://openuserjs.org/) clicando [aqui](https://openuserjs.org/scripts/stake2/Stake2_-_Enviar_mensagem_com_Enter_no_SuperAnimes)<br>
