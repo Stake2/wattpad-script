@@ -1,14 +1,15 @@
 // ==UserScript==
-// @name         Stake2 - Enviar mensagem com Enter no SuperAnimes
+// @name         Stake2 - Enviar mensagem com Enter no SuperAnimes e SuperMangás
 // @namespace    https://github.com/stake2/sa-script/
 // @version      1.0
-// @description  Esse script permite você enviar mensagens para outras pessoas no site SuperAnimes apertando o Enter, o site não permite isso por padrão
+// @description  Esse script permite você enviar mensagens para outras pessoas no site SuperAnimes e SuperMangás apertando o Enter, o site não permite isso por padrão
 // @author       Stake2, Izaque
 // @license MIT
 // @homepageURL  https://github.com/stake2/sa-script/
 // @updateURL    https://github.com/stake2/sa-script/
-// @match        https://www.superanimes.org/*
 // @include      https://*.superanimes.*/
+// @include      https://*.supermangas.*/
+// @include      https://*.superhentais.*/
 // ==/UserScript==
 
 var input_box = document.getElementsByClassName("friend_sms_text")[0];
