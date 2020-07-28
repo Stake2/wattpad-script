@@ -21,7 +21,7 @@ The UserScript was made using the [Tampermonkey](https://www.tampermonkey.net/) 
 [Violentmonkey](https://addons.mozilla.org/firefox/addon/violentmonkey/)<br>
 
 ## Installing extension on Opera
-[Opera extension for installing Chrome extensions](https://addons.opera.com/en/extensions/details/install-chrome-extensions/)
+[Opera extension for installing Chrome extensions](https://addons.opera.com/en/extensions/details/install-chrome-extensions/)<br>
 [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)<br>
 [Violentmonkey](https://chrome.google.com/webstore/detail/jinjaccalgkegednnccohejagnlnfdag/)<br>
 
