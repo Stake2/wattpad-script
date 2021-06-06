@@ -12,8 +12,31 @@
 // @include      https://www.superhentais.*/*
 // ==/UserScript==
 
-var input_box = document.getElementsByClassName("friend_sms_text")[0];
-var perfil_sms_btn = document.getElementsByClassName("perfil_sms_btn")[0];
+function getElementByXpath(path) {
+  return document.evaluate(path, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+}
+
+function print(variable) {
+	console.log(variable);
+}
+
+function sleep(variable_function, time) {
+	var is_function = true;
+
+	if (typeof variable_function !== "function") {
+		is_function = false;
+	}
+
+	if (is_function == true) {
+		setTimeout(variable_function, time);
+	}
+
+	if (is_function == false) {
+		setTimeout(function() {
+		variable_function;
+		}, time);
+	}
+}
 
 function Type() {
     var key = window.event.keyCode;
@@ -29,66 +52,32 @@ function Type() {
     }
 }
 
-//console.log("Type function was defined.");
+function Style_Message_Box() {
+	input_box.setAttribute('class', 'friend_sms_text');
+	input_box.setAttribute('name', 'sms_text');
+	input_box.setAttribute('maxlength', '1000');
+	input_box.setAttribute('placeholder', 'Escrever Mensagem!');
+	input_box.setAttribute('style', 'overflow: hidden;');
+
+	input_box.addEventListener("keyup", function(event) {
+		// Number 13 is the "Enter" key on the keyboard
+		if (event.keyCode === 13) {
+			// Cancel the default action, if needed
+			event.preventDefault();
+			// Trigger the button element with a click
+			perfil_sms_btn.click();
+		}
+	});
+}
+
+var input_box = document.querySelectorAll('[name="sms_text"]')[0];
+var friend_sms_text = document.getElementsByClassName("friend_sms_text")[0];
+var perfil_sms_btn = document.getElementsByClassName("perfil_sms_btn")[0];
 
 input_box = input_box.parentNode.replaceChild(document.createElement("input"), input_box);
-input_box = document.evaluate("/html/body/div[7]/div[2]/div[1]/div/div[2]/div[1]/input", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
-input_box.setAttribute('class', 'friend_sms_text');
-input_box.setAttribute('name', 'sms_text');
-input_box.setAttribute('maxlength', '1000');
-input_box.setAttribute('placeholder', 'Escrever Mensagem!');
-input_box.setAttribute('style', 'overflow: hidden;');
 
-input_box.addEventListener("keyup", function(event) {
-  // Number 13 is the "Enter" key on the keyboard
-  if (event.keyCode === 13) {
-    // Cancel the default action, if needed
-    event.preventDefault();
-    // Trigger the button element with a click
-    perfil_sms_btn.click();
-  }
-});
+setTimeout(function() {
+input_box = getElementByXpath("/html/body/div[7]/div[2]/div[1]/div/div[1]/input");
+}, 300);
 
-//input_box.setAttribute('onkeypress', 'Type();');
-
-/*GM_xmlhttpRequest({
-  method : "GET",
-  // from other domain than the @match one (.org / .com):
-  url : "https://github.com/stake2/sa-style/raw/master/Stake2's Test Script.js",
-  onload : (ev) =>
-  {
-    let e = document.createElement('script');
-    e.innerText = ev.responseText;
-    unsafeWindow.document.head.appendChild(e);
-  }
-});*/
-
-//var e = document.createElement('script');
-//e.setAttribute('src', "https://github.com/stake2/sa-style/raw/master/Stake2's%20Test%20Script.js");
-//document.head.appendChild(e);
-
-//e.innerText = `
-/*function Type() {
-    var key = window.event.keyCode;
-
-    // If the user has pressed enter
-    if (key === 13) {
-		console.log("Enter key was pressed, clicking on send button.");
-		input_box.click();
-    }
-
-    else {
-		console.log("Enter key was not pressed.");
-    }
-}
-`;*/
-//document.head.appendChild(e);
-
-//document.body.setAttribute('onload', 'Type();');
-
-//ChangeTitleTo("The new title");
-//ChangeTitleTo("is");
-//setTimeout(2000);
-//ChangeTitleTo(newtitle);
-//setTimeout(2000);
-//ChangeTitleTo(originaltitle);
+sleep(Style_Message_Box, 350);
