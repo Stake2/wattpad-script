@@ -78,6 +78,12 @@ input_box = input_box.parentNode.replaceChild(document.createElement("input"), i
 
 setTimeout(function() {
 input_box = getElementByXpath("/html/body/div[7]/div[2]/div[1]/div/div[1]/input");
+
+if (input_box == null) {
+	input_box = getElementByXpath("/html/body/div[7]/div[2]/div[1]/div/div[2]/div[1]/input");
+}
 }, 300);
+
+
 
 sleep(Style_Message_Box, 350);
