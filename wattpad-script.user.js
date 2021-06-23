@@ -4,8 +4,8 @@
 // @version      1.0
 // @description  Send message with enter on Wattpad
 // @author       You
-// @match        https://www.wattpad.com/inbox
-// @match        https://www.wattpad.com/inbox/*
+// @match        https://*.wattpad.com/inbox
+// @match        https://*.wattpad.com/inbox/*
 // @icon         https://icons.duckduckgo.com/ip2/wattpad.com.ico
 // @grant        none
 // ==/UserScript==
