@@ -1,13 +1,13 @@
-# SuperAnimes, SuperMangas UserScript
+# Wattpad UserScript
 
 ## Traduções
 [Versão em Português](./README-PT.md) 🇧🇷
 
 ## Description
-A UserScript to the brazilian anime website called [SuperAnimes](https://www.superanimes.org/)<br>
-It also aplies to the [SuperMangas](https://www.supermangas.site/) website<br>
-It allows you to use the Enter key to send messages to other people on the webiste<br>
+A UserScript to the literature website called [Wattpad](https://www.wattpad.com/)<br>
+It allows you to use the Enter key to send messages to other people on the inbox of the website<br>
 The website does not provide this feature by default<br>
+It also modifies the Inbox layout and adds some hotkeys to the Inbox page<br>
 
 The UserScript was made using the [Tampermonkey](https://www.tampermonkey.net/) extension, but you can use others to run it<br>
 Install any of the extensions below
@@ -30,5 +30,4 @@ Install any of the extensions below
 [Link for OpenUserJs page with extensions](https://openuserjs.org/about/Userscript-Beginners-HOWTO)<br>
 
 ## Installing the UserScript
-After installing the right extension for your browser, install the UserScript by clicking [here](https://github.com/stake2/sa-script/raw/master/sa-script.user.js)<br>
-Or install it from the [OpenUserJs](https://openuserjs.org/) website by clicking [here](https://openuserjs.org/scripts/stake2/Stake2_-_Enviar_mensagem_com_Enter_no_SuperAnimes)<br>
+After installing the right extension for your browser, install the UserScript by clicking [here](https://github.com/stake2/wattpad-script/raw/master/wattpad-script.user.js)<br>
