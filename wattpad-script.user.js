@@ -10,13 +10,11 @@
 // @grant        none
 // ==/UserScript==
 
-function getElementByXpath(path) {
+function xpath(path) {
   return document.evaluate(path, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
 }
 
-var xpath = getElementByXpath
-
-function getElementsByXPath(xpath, parent) {
+function xpaths(xpath, parent) {
   let results = [];
   let query = document.evaluate(xpath, parent || document,
       null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
@@ -38,12 +36,7 @@ function Detect_Message_Box() {
 	var main_content = xpath("/html/body/div[4]/div/div/div/div/div").style.maxWidth = "900px";
 	var message_box_parent = xpath("/html/body/div[4]/div/div/div/div/div/form/div[1]");
 
-	var old_message_box;
-
-	setInterval(function(){
-	old_message_box = xpath("/html/body/div[4]/div/div/div/div/div/form/div[1]/textarea");
-	}, 1000);
-
+	var old_message_box = xpath("/html/body/div[4]/div/div/div/div/div/form/div[1]/textarea");
 	var message_border = xpath("/html/body/div[4]/div/div/div/div/div/form/div[1]");
 	xpath("/html/body/div[4]/div/div/div/div/div/form/div[1]/div").remove();
 	//var react_container = xpath('//*[@id="app-container"]');
@@ -71,7 +64,6 @@ function Detect_Message_Box() {
 
 	send_button.style.display = "none";
 
-	setInterval(function(){
 	old_message_box.style.color = "#000";
 	message_border.style.border = "1px solid #000";
 	message_border.style.height = "130px";
@@ -79,7 +71,6 @@ function Detect_Message_Box() {
 	message_border.style.background = "none";
 	old_message_box.setAttribute("placeholder", "Escreva uma mensagem...");
 	old_message_box.removeAttribute("spellcheck");
-	}, 100);
 
 	document.body.style.color = "black";
 
@@ -104,9 +95,8 @@ function Detect_Message_Box() {
 	var children = conversations.childNodes;
 	var check = setInterval(function(){
 		children.forEach(check_username)
-	}, 250);
+	}, 100);
 
-	setInterval(function(){
 	old_message_box.addEventListener("keyup", function(event) {
 		// Number 13 is the "Enter" key on the keyboard
 		if (event.keyCode === 13 && event.shiftKey === false) {
@@ -121,7 +111,6 @@ function Detect_Message_Box() {
 			window.location = wattpad_inbox_url;
 		}
 	});
-	}, 400);
 }
 
 function Set_Event_Listener(element) {
@@ -142,7 +131,7 @@ function hashHandler(){
             that.oldHash = window.location.href;
 			setTimeout(function() {
 			Detect_Message_Box();
-			}, 1300);
+			}, 650);
         }
     };
 
@@ -153,7 +142,7 @@ document.getElementById("footer-container").remove();
 
 if (link == wattpad_inbox_url) {
 	setTimeout(function() {
-	getElementsByXPath("/html/body/div[4]/div/div/div/div/div[2]").forEach(Set_Event_Listener);
+	xpaths("/html/body/div[4]/div/div/div/div/div[2]").forEach(Set_Event_Listener);
 	}, 2000);
 
 	document.addEventListener("keypress", function(event) {
@@ -174,5 +163,5 @@ if (link == wattpad_inbox_url) {
 else {
 	setTimeout(function() {
 	Detect_Message_Box();
-	}, 2000);
+	}, 1300);
 }
