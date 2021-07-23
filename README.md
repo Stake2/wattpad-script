@@ -27,4 +27,4 @@ Install any of the extensions below
 [Violentmonkey](https://chrome.google.com/webstore/detail/jinjaccalgkegednnccohejagnlnfdag/)<br>
 
 ## Installing the UserScript
-After installing the right extension for your browser, install the UserScript by clicking [here](https://github.com/stake2/wattpad-script/raw/master/wattpad-script.user.js)<br>
+After installing the right extension for your browser, install the UserScript by clicking [here](https://github.com/Stake2/wattpad-script/raw/master/wattpad-script.user.js)<br>
